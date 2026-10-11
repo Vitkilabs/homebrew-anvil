@@ -51,7 +51,10 @@ cask "anvil-app" do
   # Uninstall, even --zap, removes the program and its caches only. The vault
   # and memory in ~/.anvil are the user's data: only `anvil uninstall` removes
   # them, after offering a readable backup.
-  uninstall quit: "com.vitkilabs.anvil"
+  # From 0.0.2 the app installs a login LaunchAgent for its daemon; uninstalling
+  # stops it and removes the agent (the data in ~/.anvil stays).
+  uninstall quit:      "com.vitkilabs.anvil",
+            launchctl: "com.vitkilabs.anvil.daemon"
 
   zap trash: [
     "~/Library/Application Support/com.vitkilabs.anvil",
