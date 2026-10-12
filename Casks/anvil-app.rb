@@ -14,8 +14,8 @@
 # formula downloads are never quarantined.
 cask "anvil-app" do
   # Apple silicon only: Intel Macs are not supported (2026-10-09).
-  version "0.0.1"
-  sha256 "742f53bc4e848bcc9a43607c478b1998f2d40cf692161acdac860eb55ec5b6f1"
+  version "0.0.2"
+  sha256 "ef745ad2c7a9e7be8872a83d834d816488e484b9c23567ed065f4a4c17dd2cdb"
 
   url "https://github.com/Vitkilabs/anvil-releases/releases/download/v#{version}/Anvil_#{version}_aarch64.dmg",
       verified: "github.com/Vitkilabs/anvil-releases/"
