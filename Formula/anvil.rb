@@ -18,6 +18,8 @@ class Anvil < Formula
     bin.install "anvil"
     bin.install "anvild"
     bin.install "anvil-mcp"
+    # The embedding model, so the first start needs no internet (0.0.2).
+    (share/"anvil").install "models"
   end
 
   test do
