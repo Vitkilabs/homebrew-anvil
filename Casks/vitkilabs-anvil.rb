@@ -1,5 +1,5 @@
 # Vitkilabs Anvil desktop app (Apple silicon).
-#   brew install --cask vitkilabs/anvil/anvil-app
+#   brew install --cask vitkilabs/anvil/vitkilabs-anvil
 #
 # Without an Apple Developer ID (checked 2026-09-25): our own tap may carry an
 # app that is signed but not notarized (the official homebrew/cask repo may
@@ -12,7 +12,7 @@
 #
 # The CLI formula (Formula/anvil.rb) is separate and needs none of this:
 # formula downloads are never quarantined.
-cask "anvil-app" do
+cask "vitkilabs-anvil" do
   # Apple silicon only: Intel Macs are not supported (2026-10-09).
   version "0.0.4"
   sha256 "7ac28ffacd6c9f4414081f110c58eaf2c24111aec06e51d477d59b9be53ed4dc"
