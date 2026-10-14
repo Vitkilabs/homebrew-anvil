@@ -17,8 +17,7 @@ cask "vitkilabs-anvil" do
   version "0.0.4"
   sha256 "7ac28ffacd6c9f4414081f110c58eaf2c24111aec06e51d477d59b9be53ed4dc"
 
-  url "https://github.com/Vitkilabs/anvil-releases/releases/download/v#{version}/Anvil_#{version}_aarch64.dmg",
-      verified: "github.com/Vitkilabs/anvil-releases/"
+  url "https://github.com/Vitkilabs/anvil-releases/releases/download/v#{version}/Anvil_#{version}_aarch64.dmg"
   name "Vitkilabs Anvil"
   desc "Private, local, encrypted AI memory tool for your coding assistant"
   homepage "https://vitkilabs.com/anvil"
@@ -53,8 +52,8 @@ cask "vitkilabs-anvil" do
   # them, after offering a readable backup.
   # From 0.0.2 the app installs a login LaunchAgent for its daemon; uninstalling
   # stops it and removes the agent (the data in ~/.anvil stays).
-  uninstall quit:      "com.vitkilabs.anvil",
-            launchctl: "com.vitkilabs.anvil.daemon"
+  uninstall launchctl: "com.vitkilabs.anvil.daemon",
+            quit:      "com.vitkilabs.anvil"
 
   zap trash: [
     "~/Library/Application Support/com.vitkilabs.anvil",
