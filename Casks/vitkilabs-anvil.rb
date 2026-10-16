@@ -14,10 +14,10 @@
 # formula downloads are never quarantined.
 cask "vitkilabs-anvil" do
   # Apple silicon only: Intel Macs are not supported (2026-10-09).
-  version "0.0.4"
-  sha256 "7ac28ffacd6c9f4414081f110c58eaf2c24111aec06e51d477d59b9be53ed4dc"
+  version "0.0.5"
+  sha256 "abc71ea2c9ca999d81f4cc5603e87c388f8b08e2ce103ea973dafeaa56542e1b"
 
-  url "https://github.com/Vitkilabs/anvil-releases/releases/download/v#{version}/Anvil_#{version}_aarch64.dmg"
+  url "https://github.com/Vitkilabs/anvil-releases/releases/download/v#{version}/vitkilabs-anvil_#{version}_aarch64.dmg"
   name "Vitkilabs Anvil"
   desc "Private, local, encrypted AI memory tool for your coding assistant"
   homepage "https://vitkilabs.com/anvil"
