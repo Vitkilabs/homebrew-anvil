@@ -17,7 +17,7 @@ cask "vitkilabs-anvil" do
   version "0.0.5"
   sha256 "abc71ea2c9ca999d81f4cc5603e87c388f8b08e2ce103ea973dafeaa56542e1b"
 
-  url "https://github.com/Vitkilabs/anvil-releases/releases/download/v#{version}/vitkilabs-anvil_#{version}_aarch64.dmg"
+  url "https://github.com/Vitkilabs/vitkilabs-anvil/releases/download/v#{version}/vitkilabs-anvil_#{version}_aarch64.dmg"
   name "Vitkilabs Anvil"
   desc "Private, local, encrypted AI memory tool for your coding assistant"
   homepage "https://vitkilabs.com/anvil"

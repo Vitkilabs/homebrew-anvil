@@ -5,7 +5,7 @@
 class Anvil < Formula
   desc "Private, local, encrypted AI memory tool for your coding assistant (CLI)"
   homepage "https://vitkilabs.com/anvil"
-  url "https://github.com/Vitkilabs/anvil-releases/releases/download/v0.0.5/vitkilabs-anvil-0.0.5-aarch64-apple-darwin.tar.gz"
+  url "https://github.com/Vitkilabs/vitkilabs-anvil/releases/download/v0.0.5/vitkilabs-anvil-0.0.5-aarch64-apple-darwin.tar.gz"
   version "0.0.5"
   sha256 "71b18080ad4ffeec54ac993e1999bb89e27b0c58f03e642e9cf73f01ecf9dd29"
   license :cannot_represent # proprietary; use is governed by the in-app EULA
