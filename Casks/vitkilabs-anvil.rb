@@ -15,7 +15,7 @@
 cask "vitkilabs-anvil" do
   # Apple silicon only: Intel Macs are not supported (2026-10-09).
   version "0.0.5"
-  sha256 "abc71ea2c9ca999d81f4cc5603e87c388f8b08e2ce103ea973dafeaa56542e1b"
+  sha256 "0a3fe7eb3581472dfd24eb96e2a4f702e799dedcf56f0857dbbee1f93b78d390"
 
   url "https://github.com/Vitkilabs/vitkilabs-anvil/releases/download/v#{version}/vitkilabs-anvil_#{version}_aarch64.dmg"
   name "Vitkilabs Anvil"
