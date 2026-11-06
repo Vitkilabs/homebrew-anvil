@@ -14,8 +14,8 @@
 # formula downloads are never quarantined.
 cask "vitkilabs-anvil" do
   # Apple silicon only: Intel Macs are not supported (2026-10-09).
-  version "0.0.6"
-  sha256 "cb76545f29b2b446a5cbf8cadf1754fb5a18ae44ad1f112bcbc2a9bfa3fe08f3"
+  version "1.0.2-beta"
+  sha256 "5ecc34bd56414cb6c89e2fb4ad34a37921bfa6e783c748d3febd9278ba2607ea"
 
   url "https://github.com/Vitkilabs/vitkilabs-anvil/releases/download/v#{version}/vitkilabs-anvil_#{version}_aarch64.dmg"
   name "Vitkilabs Anvil"
