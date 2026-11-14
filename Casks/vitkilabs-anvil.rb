@@ -1,5 +1,5 @@
-# Vitkilabs Anvil desktop app (Apple silicon).
-#   brew install --cask vitkilabs/anvil/vitkilabs-anvil
+# Anvil by XrossWarden desktop app (Apple silicon).
+#   brew install --cask xrosswarden/anvil/vitkilabs-anvil
 #
 # Without an Apple Developer ID (checked 2026-09-25): our own tap may carry an
 # app that is signed but not notarized (the official homebrew/cask repo may
@@ -17,10 +17,10 @@ cask "vitkilabs-anvil" do
   version "1.0.2-beta"
   sha256 "5ecc34bd56414cb6c89e2fb4ad34a37921bfa6e783c748d3febd9278ba2607ea"
 
-  url "https://github.com/Vitkilabs/vitkilabs-anvil/releases/download/v#{version}/vitkilabs-anvil_#{version}_aarch64.dmg"
-  name "Vitkilabs Anvil"
+  url "https://github.com/XrossWarden/anvil-releases/releases/download/v#{version}/vitkilabs-anvil_#{version}_aarch64.dmg"
+  name "Anvil by XrossWarden"
   desc "Private, local, encrypted AI memory tool for your coding assistant"
-  homepage "https://vitkilabs.com/anvil"
+  homepage "https://xrosswarden.com/anvil"
 
   livecheck do
     url :url
@@ -64,7 +64,7 @@ cask "vitkilabs-anvil" do
   ]
 
   caveats <<~EOS
-    Vitkilabs Anvil keeps your memory in ~/.anvil, encrypted. Uninstalling the
+    Anvil by XrossWarden keeps your memory in ~/.anvil, encrypted. Uninstalling the
     app leaves it in place; to remove it too, run `anvil uninstall` first. It
     offers a readable backup before deleting anything.
 
